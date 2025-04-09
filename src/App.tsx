@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css"
-import InputField from "./components/InputField";
+import InputField from "./components/inputField";
 import { Todo } from "./components/model";
 import ToDolist from "./components/toDolist";
 
@@ -24,10 +24,10 @@ export default function App() {
     <div className="App">
       <span className="heading">Taskify</span>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
-      <ToDolist todos={todos} setTodos={setTodos} />
-      {todos.map ((t) => (
-        <li>{t.todo}</li>
-      ))}
+      <ToDolist 
+        todos={todos} 
+        setTodos={setTodos} 
+      />
     </div>
   );
 };
