@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css"
 import InputField from "./components/inputField";
 import { Todo } from "./components/model";
-import ToDolist from "./components/toDolist";
+import ToDolist from "./components/toDoList";
 
 export default function App() {
 
